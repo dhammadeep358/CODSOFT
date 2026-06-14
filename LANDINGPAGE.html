@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberWorld- Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#111827;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#0d6efd;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+    max-width:800px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+/* Services */
+.services{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+/* Features */
+.features{
+    background:#111827;
+    color:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.features h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#1f2937;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* About */
+.about{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Contact */
+.contact{
+    background:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">CyberWorld</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+
+<h1>Protect Your Digital World</h1>
+
+<p>
+Advanced Cyber Security Solutions for Businesses and Individuals.
+Secure Networks, Cloud Systems and Digital Assets with Confidence.
+</p>
+
+<a href="#services" class="btn">Get Started</a>
+<a href="#about" class="btn">Learn More</a>
+
+</div>
+</section>
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Network Security</h3>
+<p>
+Protect your network infrastructure from unauthorized access and cyber threats.
+</p>
+</div>
+
+<div class="card">
+<h3>Ethical Hacking</h3>
+<p>
+Identify vulnerabilities before attackers can exploit them.
+</p>
+</div>
+
+<div class="card">
+<h3>Cloud Security</h3>
+<p>
+Secure cloud environments and sensitive business data.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="features" id="features">
+
+<h2>Why Choose Us</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>24/7 Monitoring</h3>
+</div>
+
+<div class="feature">
+<h3>Expert Team</h3>
+</div>
+
+<div class="feature">
+<h3>Fast Response</h3>
+</div>
+
+<div class="feature">
+<h3>Advanced Protection</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Us</h2>
+
+<p>
+CyberShield is a trusted cyber security company providing
+advanced protection against cyber threats. Our mission is to
+keep businesses and individuals secure in the digital age
+through innovative security solutions and expert support.
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p> ganvirofficial358@gmail.com</p>
+<p> +91 70668 106**</p>
+<p> Nagpur, Maharashtra</p>
+
+</section>
+
+<footer>
+<p>© 2026 CyberShield. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
